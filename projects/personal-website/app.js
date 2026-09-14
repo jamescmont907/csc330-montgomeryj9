@@ -46,8 +46,12 @@ app.post('/contact', (req, res) => {
             formData: req.body
    });
     }
+    
   // In a real app, you'd save this to database or send email
   console.log('Contact form submission:', { name, email, message });
+  setTimeout(()=>{
+      console.log(`[${new Date().toISOString()}] Email sent to ${email}`)
+    }, 5000);
  // Show success message
     res.render('contact', {
       title: 'Contact Me',
@@ -56,7 +60,16 @@ app.post('/contact', (req, res) => {
       });
     });
 
-
+app.get('/block',(req, res) => {
+console.log('Blocking route started');
+const start= Date.now();
+while (Date.now() - start < 10000){
+  //busy wait loop
+  // doing nothing
+}
+console.log('Blocking route finished');
+res.send('Blocking take completed after 5 seconds');
+});
 // Start server
 app.listen(PORT, () => {
   console.log(`Website running at http://localhost:${PORT}`);
