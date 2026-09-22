@@ -1,0 +1,48 @@
+<%- include('partials/nav') %>
+
+<main>
+  <h1>My Skills</h1>
+
+  <!-- TODO: Loop through the skills array --> 
+   <% skills.forEach(group => { %>
+    
+    <!-- TODO: Wrap each category in a <section> with the .category-group class -->
+    <section class="category-group">
+      <!-- TODO: Display category name in an <h3> -->
+        <h2>Computer Skills</h2>
+      <!-- TODO: Create a <ul> with the .skills-list class -->
+      <ul class="skills-list">
+        <li>
+            <p>Phyton</p>
+            
+        </li>
+        <li>
+            <p>Java</p>
+        </li>
+        <li>
+            <p>Robotics</p>
+        </li>
+        <!-- TODO: Loop through group.items and render each skill inside an <li> with the .skill-badge class -->
+      </ul>
+    </section>
+     <section class="category-group">
+         <h3>People Skills</h3>
+      <!-- TODO: Create a <ul> with the .skills-list class -->
+      <ul class="skills-list">
+        <li>
+            <p>Customer Service</p>
+        </li>
+        <li>
+            <p>Teaching Children</p>
+        </li>
+        <li>
+            <p>Problem Solving</p>
+        </li>
+      </ul>
+     </section>
+
+  <% }); %>
+
+</main>
+
+<%- include('partials/footer') %>

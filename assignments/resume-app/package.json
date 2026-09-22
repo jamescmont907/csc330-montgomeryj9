@@ -1,0 +1,23 @@
+{
+    "name": "resume-app",
+    "version": "1.0.0",
+    "description": "James Montgomery CSC330 Resume App",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js",
+        "test": "echo \"Error: no test specified hi there\" && exit 1"
+    },
+    "keywords": [],
+    "author": "James Montgomery",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "dotenv": "^18.0.2",
+        "ejs": "^6.0.1",
+        "express": "^5.2.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.14"
+    }
+}

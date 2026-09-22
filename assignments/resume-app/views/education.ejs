@@ -1,0 +1,22 @@
+<%- include('partials/nav') %>
+
+<main>
+  <h2>Education</h2>
+
+  <section class="category-group">
+    <h3><%= education.institution %></h3>
+    <p><%= education.location %></p>
+
+    <p><strong>Degree:</strong> <%= education.degree %></p>
+    <p><strong>Expected Graduation:</strong> <%= education.expectedGraduation %></p>
+
+    <h4>Relevant Coursework:</h4>
+    <ul class="coursework-list">
+      <% education.coursework.forEach(course => { %>
+        <li><%= course %></li>
+      <% }); %>
+    </ul>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

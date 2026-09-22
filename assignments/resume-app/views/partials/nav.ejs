@@ -1,0 +1,10 @@
+<nav class="navbar">
+    <link rel="stylesheet" href="/css/style.css">
+  <a href="/" class="nav-brand">James Montgomery</a>
+  <ul class="nav-links">
+     <li><a href="/" class="nav-link <%= currentPage === '/' ? 'active' : '' %>">Home</a></li>
+    <li><a href="/projects" class="nav-link <%= currentPage === '/projects' ? 'active' : '' %>">Projects</a></li>
+    <li><a href="/education" class="nav-link <%= currentPage === '/education' ? 'active' : '' %>">Education</a></li>
+    <li><a href="/skills" class="nav-link <%= currentPage === '/skills' ? 'active' : '' %>">Skills</a></li>
+  </ul>
+</nav>

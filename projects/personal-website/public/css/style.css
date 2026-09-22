@@ -175,3 +175,76 @@ footer {
         gap: 2rem;
     }
 }
+
+/* Form message styles */
+.form-message {
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Loading state styles */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Email validation styles */
+#email {
+    transition: border-color 0.3s ease;
+}
+
+.email-hint {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+/* Async demo section */
+.async-demo {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.async-demo h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.async-demo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.async-demo li {
+    padding: 0.25rem 0;
+    color: #495057;
+}
+
+.form-info {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #e3f2fd;
+    border-radius: 5px;
+    border-left: 4px solid #2196f3;
+}
+
+.form-info em {
+    color: #1565c0;
+}

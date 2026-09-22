@@ -15,15 +15,25 @@
         <p>Feel free to reach out if you want to connect or have any questions!</p>
         
         <div class="contact-details">
-            <p><strong>Email:</strong> montgomeryj9@southernct.edu</p>
-            <p><strong>GitHub:</strong> <a href="#">github.com/jamescmont907</a></p>
-            <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/james-montgomery-93259132a</a></p>
+            <p><strong>Email:</strong> jamescmont@gmail.com</p>
+            <p><strong>GitHub:</strong> <a href="#">https://github.com/jamescmont907</a></p>
+            <p><strong>LinkedIn:</strong> <a href="#">www.linkedin.com/in/james-montgomery-93259132a</a></p>
+        </div>
+        
+        <div class="async-demo">
+            <h3>✨ New Features</h3>
+            <ul>
+                <li>📧 Real email sending</li>
+                <li>⚡ Async JavaScript</li>
+                <li>🔄 Loading states</li>
+                <li>✅ Real-time validation</li>
+            </ul>
         </div>
     </div>
     
     <div class="contact-form-container">
         <h2>Send a Message</h2>
-        <form class="contact-form" method="POST" action="/contact">
+        <form id="contact-form" class="contact-form" method="POST" action="/contact">
             <div class="form-group">
                 <label for="name">Name *</label>
                 <input type="text" id="name" name="name" value="<%= formData.name || '' %>" required>
@@ -32,6 +42,7 @@
             <div class="form-group">
                 <label for="email">Email *</label>
                 <input type="email" id="email" name="email" value="<%= formData.email || '' %>" required>
+                <small class="email-hint">Try typing to see real-time validation</small>
             </div>
             
             <div class="form-group">
@@ -41,7 +52,13 @@
             
             <button type="submit" class="btn">Send Message</button>
         </form>
+        
+        <div class="form-info">
+            <p><em>This form now sends real emails using async JavaScript! You'll receive a confirmation email when your message is sent.</em></p>
+        </div>
     </div>
 </div>
+
+<script src="/js/contact.js"></script>
 
 <%- include('partials/footer') %>
