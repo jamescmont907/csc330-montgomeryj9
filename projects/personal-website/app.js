@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
     title: 'Home',
     currentPage: 'home',
     message: 'Welcome to my personal website!',
-    keyStrengths: ['Software', 'Problem Solving', 'Coding Tutoring']
+   
   });
 });
 

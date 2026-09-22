@@ -1,11 +1,9 @@
-<%- include('partials/nav') %>
+<%- include('partials/header') %>
 
 <main>
   <section class="hero-section">
-    <!-- TODO: Display profile name in <h1> and headline in <h2> -->
         <h1>James Montgomery</h1>
         <h2>jamescmont@gmail.com ♦ montgomeryj9@southernct.edu</h2>
-    <!-- TODO: Display profile summary in a paragraph -->
      <p>Hardworking Computer Science undergraduate seeking opportunities in Information Technology or Software Engineering. Skilled in troubleshooting, networking, and systems support, with strong customer service experience and the ability to explain technical solutions clearly.</p>
   </section>
 
@@ -15,14 +13,12 @@
          <% keyStrengths.forEach(strength => { %>
             <li><%= strength %></li>
         <% }); %>
-      <!-- TODO: Iterate over profile.keyStrengths and output each item as an <li> --> 
     </ul>
     
   </section>
 
   <section class="contact-section">
     <h3>Get In Touch</h3>
-    <!-- TODO: Wrap the form in the .contact-form class -->
     <form class="contact-form" action="#" method="POST">
        <div class="form-group">
         <label for="name">Name</label>
