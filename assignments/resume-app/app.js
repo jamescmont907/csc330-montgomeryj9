@@ -13,6 +13,20 @@ const profile = {
         github: 'https://github.com/jamescmont907'
     }
 };
+const skills = [
+    {
+        category: 'Languages',
+        items: ['Python', 'Java', 'JavaScript', 'HTML', 'CSS']
+    },
+    {
+        category: 'Frameworks & Tools',
+        items: ['Node.js', 'Express', 'EJS', 'Git', 'VS Code']
+    },
+    {
+        category: 'People Skills',
+        items: ['Customer Service', 'Teaching Children', 'Problem Solving']
+    }
+];
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -50,12 +64,7 @@ app.get('/skills', (req, res) => {
         title: 'Skills',
         currentPage: 'skills',
         message: 'James` skills',
-        skills :[
-             {
-                name: 'Personal Website',
-                description: 'A site built with Node, Express, and EJS.'
-            }
-        ]
+        skills: skills
     })
 });
 
